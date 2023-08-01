@@ -2,9 +2,6 @@ name: Lint and Build
 on:
   workflow_dispatch:
   push:
-    paths:
-      - "**.js"
-      - "**.ts"
 jobs:
   lint:
     name: lint
@@ -22,6 +19,6 @@ jobs:
       - name: yarn
         run: yarn
       - name: yarn lint
-        run: yarn lint
+        run: yarn lint --max-warnings=0
       - name: yarn build
         run: yarn build
