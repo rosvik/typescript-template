@@ -2,7 +2,7 @@
   "name": "typescript-project",
   "version": "0.0.0",
   "main": "index.js",
-  "author": "Johannes Røsvik <j.rosvik@gmail.com>",
+  "license": "Unlicense",
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
